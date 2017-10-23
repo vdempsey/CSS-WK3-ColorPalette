@@ -1,0 +1,30 @@
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+//breakpoints
+$breakpoint-small: "only screen and (min-width: 400px)";
+$breakpoint-medium: "only screen and (min-width: 800px)";
+
+//colors
+$mint: #d9f5e8;
+$teal: #37cbc2;
+$gold: #fdbb33;
+$tomato: #fc6347;
+
+$colors: (
+  'mint': $mint,
+  'teal': $teal,
+  'gold': $gold,
+  'tomato': $tomato
+);
+
+@each $color, $hex in $colors
+{
+  .color-#{$color}
+  {
+    background-color: $hex;
+    min-height: 80px;
+    width: 100%;
+  }
+}

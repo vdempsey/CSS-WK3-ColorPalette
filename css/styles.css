@@ -1,0 +1,121 @@
+.color-mint {
+  background-color: #d9f5e8;
+  min-height: 80px;
+  width: 100%; }
+
+.color-teal {
+  background-color: #37cbc2;
+  min-height: 80px;
+  width: 100%; }
+
+.color-gold {
+  background-color: #fdbb33;
+  min-height: 80px;
+  width: 100%; }
+
+.color-tomato {
+  background-color: #fc6347;
+  min-height: 80px;
+  width: 100%; }
+
+.wrapper,
+.row {
+  *zoom: 1; }
+  .wrapper:before,
+  .row:before, .wrapper:after,
+  .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after,
+  .row:after {
+    clear: both; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border: none;
+  margin: 0 auto;
+  padding: 0; }
+
+.wrapper,
+.row {
+  font-family: Helvetica, sans-serif;
+  color: #404040;
+  text-align: left; }
+  .wrapper h1,
+  .row h1 {
+    font-weight: normal;
+    font-size: 2em; }
+  .wrapper .left,
+  .row .left {
+    font-weight: bold;
+    font-size: 0.8em; }
+  .wrapper .right,
+  .row .right {
+    font-size: 0.7em;
+    text-align: right; }
+
+.wrapper {
+  width: 95%;
+  max-width: 65em; }
+
+[class*='col-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+.copy {
+  width: 100%;
+  padding-top: 20px; }
+
+table {
+  width: 100%; }
+  table td {
+    padding: 2px 0px; }
+
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    width: 80%; }
+
+  .col-1 {
+    width: 8.3333333333%; }
+
+  .col-2 {
+    width: 16.6666666667%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.3333333333%; }
+
+  .col-5 {
+    width: 41.6666666667%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.3333333333%; }
+
+  .col-8 {
+    width: 66.6666666667%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.3333333333%; }
+
+  .col-11 {
+    width: 91.6666666667%; }
+
+  .col-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

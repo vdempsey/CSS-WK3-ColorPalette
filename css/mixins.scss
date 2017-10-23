@@ -1,0 +1,28 @@
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin table {
+    border-collapse: collapse;
+    border: none;
+}
+
+@mixin font {
+  h1 {
+    font-weight: normal;
+    font-size: 2em; 
+  }
+  font-family: Helvetica, sans-serif;
+  color: #404040;
+  text-align: left;
+  .left {
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  .right {
+    font-size: 0.7em;
+    text-align: right;
+  }
+}

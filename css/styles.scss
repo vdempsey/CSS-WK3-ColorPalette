@@ -1,0 +1,67 @@
+@import "variables";
+@import "mixins";
+
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+*,
+*:after,
+*:before {
+  @include border-box;
+  @include table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper,
+.row {
+  @extend %clearfix;
+  @include font;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: $grid-max-width;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+    }
+
+.copy {
+  width: 100%;
+  padding-top: 20px;
+}
+
+table {
+  width: 100%;
+  td {
+    padding: 2px 0px;
+  }
+}
+
+
+@media #{$breakpoint-medium} {
+  .wrapper {
+    width: 80%;
+  }
+
+  @for $i from 1 through 12 {
+
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+  }
+}
